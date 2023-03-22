@@ -1,0 +1,29 @@
+header{  
+    background-color:rgb(247, 248, 249);
+}
+.logo img{
+    width: 300px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+}
+.navbarItem{
+    font-size: 18px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.navbarLink{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+}
