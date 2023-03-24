@@ -2,13 +2,13 @@ const apiHost = 'moviesdatabase.p.rapidapi.com';
 const apiKey ='3d071accc4msh352f4c833b68dc9p15fa3ajsnb4f5ab7855c3';
 const baseUrl = "https://moviesdatabase.p.rapidapi.com/titles/search/title/";
 const searchMovie = document.getElementById("searchMovie");
+const queryParam = "?limit=20&info=base_info";
 
 
 document.addEventListener('submit', () => {
 	getMovie();
 	console.log(searchMovie);
 });
-
 
 const getMovie = async () => {
 	
@@ -19,8 +19,9 @@ const getMovie = async () => {
 			'X-RapidAPI-Host': apiHost
 		}
 	};
-	const response = await fetch(baseUrl+searchMovie.value, options);
+	const response = await fetch(baseUrl+searchMovie.value+queryParam, options);
 	
+	console.log(baseUrl+searchMovie.value+queryParam);
 	const {results} = await response.json();
 	console.log(results);
 
