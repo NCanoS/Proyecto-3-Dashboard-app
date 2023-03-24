@@ -21,18 +21,34 @@ const getMovie = async () => {
 	};
 	const response = await fetch(baseUrl+searchMovie.value+queryParam, options);
 	
-	console.log(baseUrl+searchMovie.value+queryParam);
 	const {results} = await response.json();
 	console.log(results);
-
+	let hasYear,hasImg;
+	
 	for(let i=0;i<results.length;i++){
 		const movieCard=document.createElement("div-movie-card");
+		if(results[i].releaseYear){
+			hasYear=`
+			<div class="releaseYear">${results[i].releaseYear.year}</div>
+			`
+		}else{
+			hasYear=`<div></div>`;
+		}
+			
+		if(results[i].primaryImage){
+			hasImg=`
+			<a href="#"><img src="${results[i].primaryImage.url}" class="movieImg"></a>
+			`
+		}else{
+			hasImg=`<div></div>`;
+		}
 		movieCard.innerHTML= `
 		<div id="movieID">${results[i].id}</div>
 		<div class="movieTitle">${results[i].titleText.text}</div>
-		<div class="releaseYear">${results[i].releaseYear.year}</div>
-		<a href="#"><img src="${results[i].primaryImage.url}" class="movieImg"></a>
-		`;
+		${hasYear}
+		${hasImg}
+		`
+		
 		document.querySelector(".movies-container").appendChild(movieCard);
 	}
 	
