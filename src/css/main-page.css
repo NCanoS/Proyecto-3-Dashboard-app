@@ -33,8 +33,7 @@
     border: 1px solid silver;
     border-radius: 30px;
 }
-button{
-    position: relative;
+.btn-submit{
     border:1px solid silver;
     text-align: center;
     padding: .5rem;
@@ -62,14 +61,14 @@ button{
   
 }
 .movie-card{
-    background-color: #fff;
-    /*color: black;
+    background-color: rgb(237, 237, 237);
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
     padding: 20px;
-    font-size: 150%;*/
+    font-size: 150%;
 }
 .releaseYear{
     font-size: .90rem;
@@ -128,7 +127,7 @@ button{
     grid-template-columns: 1fr;
     }
     .movieImg{
-        width:350px;
+        width:300px;
         height: auto;
     }
 

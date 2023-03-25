@@ -27,7 +27,8 @@ const getMovie = async () => {
 	let hasYear,hasImg;
 	
 	for(let i=0;i<results.length;i++){
-		const movieCard=document.createElement("div-movie-card");
+		const movieCard=document.createElement("div");
+		movieCard.classList.add("movie-card");
 		if(results[i].titleType.id=="movie"){
 		if(results[i].releaseYear){
 			hasYear=`
