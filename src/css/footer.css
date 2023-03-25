@@ -2,14 +2,19 @@ footer{
     width: 100%;
     height: auto;
     padding: 1rem;
-    background-color: rgba(3,37,65,255);    
+    background-color: #eee;    
     text-align: center;
     font-weight: bold;
     font-size: 15px;
-    color: #fff;
+    color: black;
     font-family:'Noto Sans', sans-serif;
 }
 i{
     font-size: 20px;
-    color: #fff;
+    color: black;
+}
+@media (min-width:300px) and (max-width:720px) {
+    footer{
+        font-size: 0.9rem;
+    }
 }

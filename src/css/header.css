@@ -23,10 +23,11 @@ nav{
     text-decoration: none;
     font-family:'Noto Sans', sans-serif;
     color:black;
+    font-weight: bold;
     font-size: 18px;
 }
 .navbarItems i{
-    color:#02759d;  
+    color:black;  
     cursor: pointer;  
 }
 .nav-toggle {
@@ -82,32 +83,4 @@ nav{
 /*
 .search{
     position: relative;
-}
-.search input{
-    width: 200px;
-    height: 30px;
-    padding: 0 10px;
-    font-size: 18px;
-    color:black;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 30px;
-}
-/*button{
-    position:absolute;
-    top:0;
-    right: 0;
-    background:#02759d;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    border:1px solid silver;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.search:hover input{
-    width: 240px;
 }
