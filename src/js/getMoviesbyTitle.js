@@ -42,7 +42,7 @@ const getMovie = async () => {
 			<a href="${results[i].primaryImage.url}"><img src="${results[i].primaryImage.url}" class="movieImg"></a>
 			`
 		}else{
-			hasImg=`<img src="./src/images/NoImageFound.png" class"movieImg">`;
+			hasImg=`<img src="./src/images/NoImageFound.png" class="movieImg">`;
 		}
 		movieCard.innerHTML= `
 		${hasImg}
