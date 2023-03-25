@@ -4,7 +4,7 @@ let selectGenre = document.getElementById("selectGenre");
 const ctx = document.getElementById("ratingChart");
 
 const drawRatingChart = async () => {
-    document.querySelector(".rating-chart-container").innerHTML="";
+    //document.querySelector(".rating-chart-container").innerHTML="";
 
     const options = {
         method: 'GET',
@@ -23,12 +23,15 @@ const drawRatingChart = async () => {
             '#1abc9c',
             '#2c3e50',
             '#c0392b',
+            '#c0392b',
+            '#c0392b',
+            '#c0392b',
+            '#c0392b',
             '#f48d86'
         ];
 
         console.log(json.results.map((movie) => movie.titleText.text));
         console.log(json.results.map((movie) => movie.ratingsSummary.aggregateRating));
-        console.log(colors.map((color) => color));
         new Chart(ctx,{
             type: 'bar',
             data:{
