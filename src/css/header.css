@@ -1,8 +1,9 @@
 header{  
-    background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% );
+   background-color:  rgb(247, 248, 249);
 }
 .logo img{
     width: 300px;
+    cursor: pointer;  
 }
 nav{
     display: flex;
@@ -11,11 +12,74 @@ nav{
     margin: 0 auto;
     max-width: 1200px;
     width: 80%;
+    
 }
 .navbar{
     display: flex;
     list-style: none;
+    gap: 2rem;
 }
+.navbarItems a{
+    text-decoration: none;
+    font-family:'Noto Sans', sans-serif;
+    color:black;
+    font-size: 18px;
+}
+.navbarItems i{
+    color:#02759d;  
+    cursor: pointer;  
+}
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+@media (min-width:300px) and (max-width:720px) {
+    header {
+        height: 60px;
+    }
+    .logo img{
+        width: 220px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #EEF1F6;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+    
+        height: calc(100% - 60px);
+        overflow-y: auto;
+    
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .navbarItems{
+        line-height: 70px;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    #btn{
+    color: rgb(25, 23, 23);
+        font-size: 20px;
+    }
+    .navbar_visible{
+        left: 0;
+    }
+    .nav-togglefocus:not(:focus-visible) {
+        outline: none;
+    }
+}
+/*
 .search{
     position: relative;
 }
@@ -29,16 +93,16 @@ nav{
     border: 1px solid silver;
     border-radius: 30px;
 }
-button{
+/*button{
     position:absolute;
     top:0;
     right: 0;
-    background: white;
+    background:#02759d;
     width: 30px;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    color:black;
+    color: white;
     font-size: 20px;
     border:1px solid silver;
     border-radius: 50%;
