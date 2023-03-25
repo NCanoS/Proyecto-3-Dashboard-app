@@ -19,7 +19,7 @@ const getMovie = async () => {
 		}
 	};
 
-	let fetchPage=1;
+	let fetchPage=2;
 	const response = await fetch(baseUrl+searchMovie.value+queryParam+fetchPage, options);
 	
 	const {results} = await response.json();
