@@ -34,12 +34,21 @@
     <section class="home">
         <div class="search">
                 <h2 class="bannerTitle">Bienvenidos</h2>
-                <h3 class="bannerInfo">Tu fuente de información cinematográfica en línea</h3>
+                <h3 class="bannerInfo">Tu base de datos cinematográfica en línea</h3>
                 <input type="text" name="searchMovie" id="searchMovie" placeholder="Buscar una película...">
                 <button type="submit" onclick="getMovie()">Submit</button>
         </div>   
     </section>
-    <label for="selectGenre">Popular Right Now</label>
+    <section class= "container-card">
+       <h2 class="movies-head">Películas</h2> 
+       <div class="movies-container">
+             <div class="movie-card">
+
+            </div>
+        </div>
+    </section>
+    <section class="container-graph">
+    <label for="selectGenre">Populares Ahora Mismo </label>
     <select name="selectGenre" id="selectGenre" onchange="drawRatingChart()">
         <option value="Action">Action</option>
         <option value="Adventure">Adventure</option>
@@ -68,10 +77,7 @@
     <div class="rating-chart-container">
         <canvas id="ratingChart"></canvas>
     </div>
-
-    <div class="movies-container">
-
-    </div>
+    </section>
     <footer>
         &copy; Copyright - 2023 Moviedata 
         <a href="https://github.com/NCanoS"><i class="fa-brands fa-github"></i></a>

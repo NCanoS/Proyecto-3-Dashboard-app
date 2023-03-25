@@ -48,3 +48,43 @@ button{
 .search:hover input{
     width: 500px;
 }
+/*.container-card{
+
+}
+.movies-container{
+
+}
+.movies-head{
+
+}
+.movie-card{
+
+}*/
+.container-graph{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}    
+.container-graph label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container-graph select{
+	display: inline-block;
+	width: 20%;
+	cursor: pointer;
+  	padding: 5px 8px;
+  	height: 32px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: white;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
